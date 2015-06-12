@@ -1,0 +1,216 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EU Cookie Law\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Fri Jun 05 2015 16:34:27 GMT+0200 (ora legale Europa "
+"occidentale)\n"
+"POT-Revision-Date: Mon Jun 08 2015 17:04:22 GMT+0200 (ora legale Europa "
+"occidentale)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../class-admin.php:34
+msgid "Changelog"
+msgstr ""
+
+#: ../class-admin.php:37
+msgid "Rate us"
+msgstr ""
+
+#: ../class-admin.php:40
+msgid "Support"
+msgstr ""
+
+#: ../class-admin.php:50
+msgid "Activate"
+msgstr ""
+
+#: ../class-admin.php:53
+msgid "Auto Block"
+msgstr ""
+
+#: ../class-admin.php:55
+msgid ""
+"This function will automatically block iframes, embeds and scripts in your "
+"post, pages and widgets."
+msgstr ""
+
+#: ../class-admin.php:57
+msgid "Enable TinyMce Button"
+msgstr ""
+
+#: ../class-admin.php:59
+msgid ""
+"Click here if you want to turn on the tinymce button for manual insertion of "
+"EU Cookie Law shortcodes while editing contents."
+msgstr ""
+
+#: ../class-admin.php:62
+msgid "Cookie acceptance lenght"
+msgstr ""
+
+#: ../class-admin.php:66
+msgid "hours"
+msgstr ""
+
+#: ../class-admin.php:68
+msgid "days"
+msgstr ""
+
+#: ../class-admin.php:70
+msgid "weeks"
+msgstr ""
+
+#: ../class-admin.php:72
+msgid "months"
+msgstr ""
+
+#: ../class-admin.php:74
+msgid ""
+"Once the user clicks accept the bar will disappear. You can set how long "
+"this will apply for before the bar reappears to the user."
+msgstr ""
+
+#: ../class-admin.php:79
+msgid "Appearance"
+msgstr ""
+
+#: ../class-admin.php:81
+msgid "Position"
+msgstr ""
+
+#: ../class-admin.php:85
+msgid "Bottom Right"
+msgstr ""
+
+#: ../class-admin.php:87
+msgid "Top Right"
+msgstr ""
+
+#: ../class-admin.php:89
+msgid "Bottom Left"
+msgstr ""
+
+#: ../class-admin.php:91
+msgid "Top Left"
+msgstr ""
+
+#: ../class-admin.php:96
+msgid "Background Color"
+msgstr ""
+
+#: ../class-admin.php:100
+msgid "Font Color"
+msgstr ""
+
+#: ../class-admin.php:105
+msgid "Content"
+msgstr ""
+
+#: ../class-admin.php:108
+msgid "Bar Message"
+msgstr ""
+
+#: ../class-admin.php:112
+msgid "More Info Text"
+msgstr ""
+
+#: ../class-admin.php:116
+msgid "Accept Text"
+msgstr ""
+
+#: ../class-admin.php:120
+msgid "Bar Link"
+msgstr ""
+
+#: ../class-admin.php:121
+msgid "Use this field if you want to link a page instead of showing the popup"
+msgstr ""
+
+#: ../class-admin.php:139
+msgid "\"Close Popup\" Text"
+msgstr ""
+
+#: ../class-admin.php:143
+msgid "Popup Box Content"
+msgstr ""
+
+#: ../class-admin.php:144
+msgid "Use this to add a popup that informs your users about your cookie policy"
+msgstr ""
+
+#: ../class-admin.php:150
+msgid "Blocked code message"
+msgstr ""
+
+#: ../class-admin.php:151
+msgid "This is the message that will be displayed for locked-code areas"
+msgstr ""
+
+#: ../class-admin.php:159
+msgid "Save Changes"
+msgstr ""
+
+#: ../class-frontend.php:184
+msgid "Cookies are enabled"
+msgstr ""
+
+#: ../class-frontend.php:185
+msgid "Revoke cookie consent"
+msgstr ""
+
+#: ../class-frontend.php:199
+msgid "Cookies are disabled"
+msgstr ""
+
+#: ../class-frontend.php:200
+#, php-format
+msgid "Accept Cookies by clicking \"%s\" in the banner."
+msgstr ""
+
+#: ../defaults.php:8
+msgid "By continuing to use the site, you agree to the use of cookies."
+msgstr ""
+
+#: ../defaults.php:9
+msgid "more information"
+msgstr ""
+
+#: ../defaults.php:10
+msgid "Accept"
+msgstr ""
+
+#: ../defaults.php:11
+msgid "Close"
+msgstr ""
+
+#: ../defaults.php:12
+msgid ""
+"The cookie settings on this website are set to \"allow cookies\" to give you "
+"the best browsing experience possible. If you continue to use this website "
+"without changing your cookie settings or you click \"Accept\" below then you "
+"are consenting to this."
+msgstr ""
+
+#: ../defaults.php:13
+msgid ""
+"<b>Content not available.</b><br><small>Please allow cookies by clicking "
+"Accept on the banner</small>"
+msgstr ""

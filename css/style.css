@@ -1,0 +1,151 @@
+.pea_cook_wrapper {
+    position: fixed;
+    padding: 8px 21px;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 10000;
+	text-align: center;
+}
+
+.pea_cook_control {
+	width:80%;
+    padding: 8px 21px;
+    margin: 20px auto;
+    border-radius: 5px;
+    z-index: 10000;
+	text-align: center;
+	color:white;
+}
+
+.pea_cook_wrapper.pea_cook_topleft {
+    top:30px;
+    left:30px;
+	margin-right:5%;
+}
+.pea_cook_wrapper.pea_cook_topright {
+    top:30px;
+    right:30px;
+	margin-left:5%;
+}
+.pea_cook_wrapper.pea_cook_bottomleft {
+    bottom:30px;
+    left:30px;
+	margin-right:5%;
+}
+.pea_cook_wrapper.pea_cook_bottomright {
+    bottom:30px;
+    right:30px;
+	margin-left:5%;
+}
+
+.pea_cook_wrapper p{
+    bottom: 30px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    font-weight: bold;
+
+}
+.pea_cook_wrapper a {
+    border-bottom: dotted thin #eee;
+    text-decoration: none;
+}
+.pea_cook_wrapper a:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+}
+
+
+a#fom, a#pea_close {border-bottom: 1px dotted;}
+
+a#pea_close {
+padding-top: 20px;
+display: block;
+}
+
+
+button.pea_cook_btn {
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;
+  color: #333;
+  font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 5px 0;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 100px; 
+  margin-left: 20px;
+}
+
+  button.pea_cook_btn:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    -moz-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; }
+
+  button.pea_cook_btn:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    -moz-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; }
+
+
+.pea_cook_more_info_popover {
+    display:none;
+    position: absolute;
+    top: 0;
+    z-index: 1000000;
+    height: 80%;
+    width: 100%;
+    left: 0;
+}
+.pea_cook_more_info_popover_inner {
+    margin: 40px auto;
+    min-width: 50%;
+    min-height: 200px;
+    padding: 50px;
+    max-width:60%;
+   background-color: rgba(0,0,0,0.75);
+    /* For IE 5.5 - 7*/
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000)";    
+}
+.pea_cook_more_info_popover_inner a {
+    border-bottom: dotted thin #eee;
+    text-decoration: none;
+}
+.pea_cook_more_info_popover_inner a:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+    color: #ddd;
+}
+
+.pea_cook_more_info_popover h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+.pea_cook_more_info_popover h3{
+    font-size: 22px;  font-weight: bold;
+}
+.eucookie {
+	float:left;
+	border-radius: 5px;
+	transition: background 0.5s;
+}
+.eucookie:hover {
+	cursor: pointer;
+	background-position: -20px -10px!important;
+	transition: background 0.5s;
+}
+.eucookie span {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	float:left;
+}
