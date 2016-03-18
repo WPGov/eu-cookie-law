@@ -2,17 +2,24 @@
 /*
 Plugin Name:  EU Cookie Law
 Plugin URI:   https://wordpress.org/plugins/eu-cookie-law/
-Description:  Cookie Law informs users that your site has cookies, with a popup for more information and ability to lock scripts before acceptance.
-Version:      2.4.2
+Description:  EU Cookie Law informs users that your site uses cookies, with option to lock scripts before consent. Light + Customizable style.
+Version:      2.9.1
 Author:       Alex Moss, Marco Milesi, Peadig, Shane Jones
 Author URI:   https://wordpress.org/plugins/eu-cookie-law/
 Contributors: alexmoss, Milmor, peer, ShaneJones
-
+Text Domain:  eu-cookie-law
 */
 
 function eucookie_start() {
-    require 'class-frontend.php';
-    if ( is_admin() ) { require 'class-admin.php'; }
+    
+    load_plugin_textdomain( 'eu-cookie-law' );
+    
+    if ( is_admin() ) {
+        require 'class-admin.php';
+    } else {
+        require 'class-frontend.php';
+    }
+    
 } add_action('init', 'eucookie_start');
 
 function ecl_action_admin_init() {
@@ -27,31 +34,15 @@ function ecl_action_admin_init() {
     if ( eucookie_option('tinymcebutton') ) {
         require 'inc/tinymce.php';
     }
+    $eda = __('EU Cookie Law informs users that your site uses cookies, with option to lock scripts before consent. Light + Customizable style.', 'eu-cookie-law');
 } add_action('admin_init', 'ecl_action_admin_init');
 
 function ecl_check_defaults() { require 'defaults.php'; }
 
-add_action( 'plugins_loaded', 'ecl_load_textdomain' );
-function ecl_load_textdomain() {
-    load_plugin_textdomain( 'eu-cookie-law', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+function eucookie_option($name) {
+    $options = get_option('peadig_eucookie');
+    if ( isset( $options[$name] ) ) { return $options[$name]; }
+    return false;
 }
-
-function admin_inline_js(){ 
-wp_enqueue_script( 'jquery' );?>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($){
-        $( "#boxcontent" ).prop( "disabled", $('#boxlinkid').val() );
-        $( "#closelink" ).prop( "disabled", $('#boxlinkid').val() );
-        $('.color-field').wpColorPicker();
-        $('#boxlinkid').on('change', function() {
-            $( "#boxcontent" ).prop( "disabled", this.value );
-            $( "#closelink" ).prop( "disabled", this.value );
-        });
-    });
-    </script>
-<?php
-}
-add_action( 'admin_print_scripts', 'admin_inline_js' );
 
 ?>

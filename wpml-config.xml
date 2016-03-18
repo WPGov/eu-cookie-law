@@ -1,0 +1,15 @@
+<wpml-config>
+  <admin-texts>
+    <key name="peadig_eucookie">
+      <key name="barmessage"/>
+      <key name="barlink"/>
+      <key name="barbutton"/>
+      <key name="closelink"/>
+      <key name="boxcontent"/>
+      <key name="bhtmlcontent"/>
+	  <key name="cc-disablecookie"/>
+	  <key name="cc-cookieenabled"/>
+	  <key name="cc-cookiedisabled"/>
+    </key>
+  </admin-texts>
+</wpml-config>

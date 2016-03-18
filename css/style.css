@@ -27,6 +27,11 @@
     right:30px;
 	margin-left:5%;
 }
+.pea_cook_wrapper.pea_cook_topcenter {
+    top:30px;
+    left:30px;
+	margin: 0 25%;
+}
 .pea_cook_wrapper.pea_cook_bottomleft {
     bottom:30px;
     left:30px;
@@ -36,6 +41,11 @@
     bottom:30px;
     right:30px;
 	margin-left:5%;
+}
+.pea_cook_wrapper.pea_cook_bottomcenter {
+    bottom:30px;
+    left:30px;
+	margin: 0 25%;
 }
 
 .pea_cook_wrapper p{
