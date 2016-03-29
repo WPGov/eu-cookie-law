@@ -194,7 +194,11 @@ add_shortcode( 'cookie', 'eu_cookie_shortcode' );
 //add_filter( 'widget_text','ecl_erase', 11 ); 
 
 function ecl_buffer_start() { ob_start("ecl_callback"); } 
-function ecl_buffer_end() { ob_end_flush();	}
+function ecl_buffer_end() {
+	$contents = ob_get_contents();
+	ob_end_clean();
+	echo $contents;
+}
 function ecl_callback($buffer) { return ecl_erase($buffer); }
 
 add_action('wp_head', 'ecl_buffer_start'); 
