@@ -66,7 +66,7 @@ function peadig_eucookie_options() {
 				</tr>
 				<tr valign="top"><th scope="row"><label for="lengthnum">
                     <?php _e('Cookie acceptance length', 'eu-cookie-law'); ?></label></th>
-					<td><input id="lengthnum" type="text" name="peadig_eucookie[lengthnum]" value="<?php echo $options['lengthnum']; ?>" size="5" /> 
+					<td><input id="lengthnum" type="text" name="peadig_eucookie[lengthnum]" value="<?php echo absint( $options['lengthnum'] ); ?>" size="5" />
 						<select name="peadig_eucookie[length]">
 							  <option value="days"<?php if ($options['length'] == 'days') { echo ' selected="selected"'; } ?>>
                                   <?php _e('days', 'eu-cookie-law'); ?></option>
@@ -92,7 +92,7 @@ function peadig_eucookie_options() {
 				</tr>
                 <tr valign="top"><th scope="row"><label for="networkshareurl">
                     <?php _e('Network Domain', 'eu-cookie-law'); ?></label></th>
-					<td><input id="networkshareurl" type="text" name="peadig_eucookie[networkshareurl]" value="<?php echo $options['networkshareurl']; ?>" size="40" /></td>
+					<td><input id="networkshareurl" type="text" name="peadig_eucookie[networkshareurl]" value="<?php echo esc_attr( $options['networkshareurl'] ); ?>" size="40" /></td>
 				</tr>
 			</table>
         <hr>
@@ -130,15 +130,15 @@ function peadig_eucookie_options() {
 			<table class="form-table">
 				<tr valign="top"><th scope="row"><label for="barmessage">
                     <?php _e('Bar Message', 'eu-cookie-law'); ?></label></th>
-					<td><input class="i18n-multilingual-display" id="barmessage" type="text" name="peadig_eucookie[barmessage]" value="<?php echo $options['barmessage']; ?>" size="100" /></td>
+					<td><input class="i18n-multilingual-display" id="barmessage" type="text" name="peadig_eucookie[barmessage]" value="<?php echo esc_attr( $options['barmessage'] ); ?>" size="100" /></td>
 				</tr>
 				<tr valign="top"><th scope="row"><label for="barlink">
                     <?php _e('More Info Text', 'eu-cookie-law'); ?></label></th>
-					<td><input id="barlink" type="text" name="peadig_eucookie[barlink]" value="<?php echo $options['barlink']; ?>" /></td>
+					<td><input id="barlink" type="text" name="peadig_eucookie[barlink]" value="<?php echo esc_attr( $options['barlink'] ); ?>" /></td>
 				</tr>
 				<tr valign="top"><th scope="row"><label for="barbutton">
                     <?php _e('Accept Text', 'eu-cookie-law'); ?></label></th>
-					<td><input id="barbutton" type="text" name="peadig_eucookie[barbutton]" value="<?php echo $options['barbutton']; ?>" /></td>
+					<td><input id="barbutton" type="text" name="peadig_eucookie[barbutton]" value="<?php echo esc_attr( $options['barbutton'] ); ?>" /></td>
 				</tr>
                 <tr valign="top"><th scope="row"><label for="boxlinkid">
                     <?php _e('Bar Link', 'eu-cookie-law'); ?><br/><small>
@@ -170,25 +170,25 @@ function peadig_eucookie_options() {
 				</tr>
                 <tr valign="top"><th scope="row"><label for="customurl">
                     <?php _e('Custom URL'); ?></label></th>
-					<td><input id="customurl" type="text" name="peadig_eucookie[customurl]" value="<?php echo $options['customurl']; ?>" />
+					<td><input id="customurl" type="text" name="peadig_eucookie[customurl]" value="<?php echo esc_attr( $options['customurl'] ); ?>" />
                         <small> <?php _e('Enter the destination URL'); ?></small></td>
 				</tr>
                 <tr valign="top"><th scope="row"><label for="closelink">
                     <?php _e('"Close Popup" Text', 'eu-cookie-law'); ?></label></th>
-					<td><input id="closelink" type="text" name="peadig_eucookie[closelink]" value="<?php echo $options['closelink']; ?>" /></td>
+					<td><input id="closelink" type="text" name="peadig_eucookie[closelink]" value="<?php echo esc_attr( $options['closelink'] ); ?>" /></td>
 				</tr>
 				<tr valign="top"><th scope="row"><label for="boxcontent">
                     <?php _e('Popup Box Content', 'eu-cookie-law'); ?><br>
                     <small><?php _e('Use this to add a popup that informs your users about your cookie policy', 'eu-cookie-law'); ?></small></label></th>
 					<td>
-<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[boxcontent]' id='boxcontent' rows='9' ><?php echo $options['boxcontent']; ?></textarea>
+<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[boxcontent]' id='boxcontent' rows='9' ><?php echo esc_textarea( $options['boxcontent'] ); ?></textarea>
 					</td>
 				</tr>
                 <tr valign="top"><th scope="row"><label for="bhtmlcontent">
                     <?php _e('Blocked code message', 'eu-cookie-law'); ?><br>
                     <small><?php _e('This is the message that will be displayed for locked-code areas', 'eu-cookie-law'); ?></small></label></th>
 					<td>
-<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[bhtmlcontent]' id='bhtmlcontent' rows='9' ><?php echo $options['bhtmlcontent']; ?></textarea>
+<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[bhtmlcontent]' id='bhtmlcontent' rows='9' ><?php echo esc_textarea( $options['bhtmlcontent'] ); ?></textarea>
 					</td>
 				</tr>
                 <tr>
@@ -201,7 +201,7 @@ function peadig_eucookie_options() {
                     <?php _e('Cookie enabled message', 'eu-cookie-law'); ?><br>
                     <small><?php _e('This is the message that will be displayed when cookie are enabled', 'eu-cookie-law'); ?></small></label></th>
 					<td>
-<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[cc-cookieenabled]' id='cc-cookieenabled' rows='9' ><?php echo $options['cc-cookieenabled']; ?></textarea><br>
+<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[cc-cookieenabled]' id='cc-cookieenabled' rows='9' ><?php echo esc_textarea( $options['cc-cookieenabled'] ); ?></textarea><br>
                     
                     <label style="font-size:0.9em;font-weight:bold;" for="cc-disablecookie"><?php _e('"Disable Cookie" Text', 'eu-cookie-law'); ?></label>
                     <input id="cc-disablecookie" type="text" name="peadig_eucookie[cc-disablecookie]" value="<?php echo $options['cc-disablecookie']; ?>" />
@@ -211,7 +211,7 @@ function peadig_eucookie_options() {
                     <?php _e('Cookie disabled message', 'eu-cookie-law'); ?><br>
                     <small><?php _e('This is the message that will be displayed when cookie are not accepted', 'eu-cookie-law'); ?></small></label></th>
 					<td>
-<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[cc-cookiedisabled]' id='cc-cookiedisabled' rows='9' ><?php echo $options['cc-cookiedisabled']; ?></textarea>
+<textarea style='font-size: 90%; width:95%;' name='peadig_eucookie[cc-cookiedisabled]' id='cc-cookiedisabled' rows='9' ><?php echo esc_textarea( $options['cc-cookiedisabled'] ); ?></textarea>
 					</td>
 				</tr>
 			</table>
