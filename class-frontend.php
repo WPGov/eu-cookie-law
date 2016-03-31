@@ -145,7 +145,7 @@ function peadig_eucookie_bar() {
             style="
                 color:<?php echo ecl_frontstyle('fontcolor'); ?>;
                 background: rgb(<?php echo ecl_frontstyle('backgroundcolor'); ?>);
-                background-color: rgba(<?php echo ecl_frontstyle('backgroundcolor'); ?>,0.85);
+                background: rgba(<?php echo ecl_frontstyle('backgroundcolor'); ?>,0.85);
             ">
             <p><?php echo eucookie_option('barmessage'); ?> <a style="color:<?php echo eucookie_option('fontcolor'); ?>;" href="<?php echo $link; ?>" <?php echo $target; ?>id="fom"><?php echo eucookie_option('barlink'); ?></a> <button id="pea_cook_btn" class="pea_cook_btn" href="#"><?php echo eucookie_option('barbutton'); ?></button></p>
         </div>
