@@ -1,6 +1,6 @@
 === EU Cookie Law ===
 Contributors: alexmoss, Milmor, pleer, ShaneJones
-Version:	2.9.1
+Version:	2.9.2
 Stable tag:	trunk
 Author:		Alex Moss, Marco Milesi, Peadig, Shane Jones
 Author URI:   https://profiles.wordpress.org/milmor/
@@ -155,6 +155,10 @@ Click on the translations link to open the translation editor and adjust the str
 9. Fully customizable
 
 == Changelog ==
+
+= 2.9.2 03.04.2016 =
+* Merged ac1d558 6937c2a daca37c thanks to [@stephenharris](https://profiles.wordpress.org/stephenharris/) on [git](https://github.com/WPGov/eu-cookie-law)
+* Updated wpml-config.xml
 
 = 2.9.1 31.01.2016 =
 * Added custom filter to exclude Jetpack InfiniteScroll
