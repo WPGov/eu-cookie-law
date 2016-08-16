@@ -1,12 +1,12 @@
 === EU Cookie Law ===
 Contributors: alexmoss, Milmor, pleer, ShaneJones
-Version:	2.9.2
+Version:	2.9.3
 Stable tag:	trunk
 Author:		Alex Moss, Marco Milesi, Peadig, Shane Jones
 Author URI:   https://profiles.wordpress.org/milmor/
 Tags: eu cookie, cookies, law, analytics, european, italia, garante, privacy, eu cookie law, italy, cookie, consent, europe
 Requires at least: 3.8
-Tested up to: 4.5
+Tested up to: 4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,7 +63,7 @@ Thanks to: [Gerard Weijer](http://gerardweijer.nl), [Karsten Höfner](http://www
 
 = Contributions =
 
-* Italian community [Porte Aperte sul Web](http://www.porteapertesulweb.it) for beta-testing and ideas.
+* Italian community [Porte Aperte sul Web](http://www.porteapertesulweb.it)
 * This plugin was originally developed by [Peadig](http://peadig.com/wordpress-plugins/eu-cookie-law/).
 
 == Installation ==
@@ -155,6 +155,9 @@ Click on the translations link to open the translation editor and adjust the str
 9. Fully customizable
 
 == Changelog ==
+
+= 2.9.3 06.07.2016 =
+* Minor changes and WP 4.6 compatibility check
 
 = 2.9.2 03.04.2016 =
 * Merged ac1d558 6937c2a daca37c thanks to [@stephenharris](https://profiles.wordpress.org/stephenharris/) on [git](https://github.com/WPGov/eu-cookie-law)
