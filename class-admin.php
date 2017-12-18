@@ -152,7 +152,7 @@ function peadig_eucookie_options() {
                         'echo'                  => 0,
                         'name'                  => 'peadig_eucookie[boxlinkid]',
                         'id'                    => 'boxlinkid', 
-                        'show_option_none'      => '* '.__('Custome Message'), 
+                        'show_option_none'      => '* '.__('Custom Message'), 
                         'show_option_no_change' => null, 
                         'option_none_value'     => null, 
                     ); ?>
